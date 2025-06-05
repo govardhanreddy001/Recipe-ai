@@ -1,11 +1,10 @@
 import { HfInference } from '@huggingface/inference'
-import dotenv from "dotenv";
 const SYSTEM_PROMPT = `
 You are an assistant that receives a command that a user gives and suggest for the answer. You don't need to go deeper into the topic. `
 
-dotenv.config();
 
-const apikey = process.env.HUGGING_FACE_TOKEN
+const apikey = "";
+
 const hf = new HfInference(apikey)
 console.log(apikey)
 
