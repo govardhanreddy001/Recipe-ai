@@ -3,7 +3,8 @@ const SYSTEM_PROMPT = `
 You are an assistant that receives a command that a user gives and suggest for the answer. You don't need to go deeper into the topic. `
 
 
-const apikey = "";
+const apikey = process.env.REACT_APP_HUGGING_FACE_TOKEN;
+console.log('Key:', apikey);
 
 const hf = new HfInference(apikey)
 console.log(apikey)
